@@ -1,0 +1,95 @@
+.balance {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    table {
+      margin-bottom: 32px;
+      width: 100%;
+
+      tr {
+        height: 50px;
+        th {
+          text-align: left;
+        }
+        td {
+          a {
+            .download-button {
+              background-color: #007bff;
+              color: white;
+              border: none;
+              padding: 10px 15px;
+              border-radius: 5px;
+              font-size: 14px;
+              cursor: pointer;
+              transition: background 0.3s ease-in-out;
+            }
+
+            .download-button:hover {
+              background-color: #0056b3;
+            }
+          }
+          sup {
+            font-size: 12px;
+          }
+
+          .image {
+            width: 50px;
+            height: 25px;
+            object-fit: cover;
+          }
+
+          .message {
+            width: 25px;
+            cursor: pointer;
+          }
+        }
+        &:nth-child(even) {
+          background-color: #1dbf730f;
+        }
+        .substracted {
+          color: #dc3545;
+          font-weight: bold;
+        }
+
+        .added {
+          color: #28a745;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .info {
+      font-size: 16px;
+      color: #333;
+
+      p {
+        margin: 16px 0;
+
+        .balance-amount {
+          color: #28a745;
+          font-weight: bold;
+        }
+
+        .balance-account {
+          color: #28a745;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      strong {
+        color: #000;
+      }
+    }
+  }
+}
